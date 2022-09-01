@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gopal Tyagi</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="JS/Script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<!-- load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+    *{
+    	padding: 0;
+    	margin: 0;
+    	box-sizing: border-box;
+    }
+
+    /* Start Header*/
+    header{
+      background-color: black:
+      	font-family: 'Dosis', sans-serif;
+    }
+
+
+    .header_menu{
+    	width: 100%;
+    	height: 100px;
+    	display: flex;
+    	flex-direction: row;
+    	align-items: center;
+      background-color: black;
+    }
+
+    .logo{
+    	width: 20%;
+    	text-align: center;
+    }
+
+    .logo img{
+    	height: 75px;
+    }
+
+    .menu_list{
+    	width: 80%;
+    	text-align: right;
+    	padding-right: 50px;
+    }
+
+    .menu_list li{
+    	display: inline-block;
+    	text-transform: uppercase;
+    	list-style: none;
+    	letter-spacing: 2px;
+    	padding-left: 50px;
+
+    }
+
+    .menu_list li a{
+    	color:rgba(255, 255, 255, .8);
+    	text-decoration: none;
+    	padding: 5px 0;
+    }
+
+    .menu_list li a:hover{
+    	color:#2da9c2;
+    	border-bottom: 2px solid #2da9c2;
+
+    }
+
+      body {
+        background-color:#d6d4d6;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+      }
+       .tables{
+        padding-left: 120px;
+       }
+
+       a.active,a:hover{
+       	color:#2da9c2;
+       	border-bottom: 2px solid #2da9c2;
+       }
+
+       .mobile-icon{display: none;}
+
+       .Header-1 {
+
+       	width: 100%;
+       	height: 200px;
+       	position: absolute;
+       	top: 50%;
+       	left: 50%;
+       	color: black;
+       	transform: translate(-50%, -50%);
+       	text-align: center;
+       }
+
+       .Header-1 .Colour{
+       	color: #2da9c2;
+       }
+
+       /*Footer	*/
+       .footer-main-div{
+       	width: 100%;
+       	height: auto;
+       	margin: auto;
+       	background: black;
+       	padding: 20px 0px;
+       	opacity: 0.8;
+       }
+
+       .footer-social-icon{
+       	width: 100%;
+       	height: auto;
+       	margin: auto;
+       	color: #fff;
+       }
+
+       .footer-social-icons ul{
+       	margin: 0px;
+       	padding: 0px;
+       	text-align: center;
+
+
+       }
+
+       .footer-social-icons ul li{
+       	display: inline-block;
+       	width: 50px;
+       	height: 50px;
+       	margin: 0px 5px;
+       	border-radius: 100%;
+       	background: #c920ad;
+
+       }
+       .footer-social-icons ul li a:hover{
+       	color: #00cc00;
+       	text-decoration: none;
+
+       }
+       .footer-social-icons ul li a{
+       	color: #272727;
+       	font-size: 25px;
+       	display: block;
+       }
+       .footer-social-icons ul li a i{
+       	line-height: 50px;
+       }
+
+       .footer-menu-one{
+       	width: 100%;
+       	height: auto;
+       	margin: auto;
+       	margin-top: 20px;
+
+       }
+
+       .footer-menu-one ul{
+       	margin: 0px;
+       	padding: 0px;
+       	text-align: center;
+
+       }
+
+       .footer-menu-one ul li{
+       	display: inline-block;
+       	margin: 0px 15px;
+       }
+
+       .footer-menu-one ul li a{
+       	font-family: 'Dosis', sans-serif;;
+       	font-size: 16px;
+       	font-weight: 600;
+       	color: #fff;
+       	text-transform: uppercase;
+       	letter-spacing: 1px;
+       	text-decoration: none;
+       	padding: 5px 0px;
+       }
+       .footer-menu-one ul li a:hover{
+       	color: #F0F8FF;
+
+       }
+       .footer-menu-one ul li a:hover{
+       	color: #00cc00;
+       	border-bottom: 2px solid #00cc00;
+
+       }
+
+       .footer-bottom{
+       	width: 100%;
+       	height: auto;
+       	margin: auto;
+       	background: 	 #b3b3b3;
+       	padding: 10px;
+       }
+
+       .footer-bottom{
+       	font-family: 'Dosis', sans-serif;
+       	font-size: 14px;
+       	text-align: center;
+       	color: #fff;
+       	font-weight: 600;
+       	letter-spacing: 1px;
+
+       }
+
+       .footer-bottom p{
+       	color: black;
+       }
+       footer{
+       	width: 100%;
+       	height: auto;
+
+       }
+
+
+       /*//////// Responsive queries //////////*/
+       @media only screen and (max-width: 1180px) {
+       	.header_content{
+       		width: 100%;
+       		padding: 0, 2px;
+
+       	}
+       }
+
+       @media only screen and (max-width: 998px){
+       	.header_content h1{font-size: 44px;}
+       	.header_content h2{font-size: 14px;}
+       }
+
+       @media only screen and (max-width: 820px){
+       	.header_content h1{font-size: 32px;}
+       	.header_content h2{font-size: 11px;}
+       	.header_content button{font-size: 10px;}
+       	.main-nav{display: none;}
+
+       	.mobile-icon{
+       		display: inline-block;
+       		color: #fff;
+       		float: right;
+       		margin-top: 30px;
+       		margin-top: 20px;
+       	}
+
+       	.main-nav{float: left;}
+
+       	.main-nav li{
+       		display: 	block;
+       		margin-top: 10px;
+       	}
+       }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header_menu">
+    		<div class="logo">
+    			<a href="main.html"><img src="Img/Bpn.png" alt="Bipin Logo"></a>
+    		</div>
+
+    		<div class="menu_list">
+    				<!--use of unorder list on page-->
+    			<ul class="main-nav animated slideInDown" id="check-class">
+    				<li><a href="main.html">Home</a> </li>
+    				<li><a href="Blog.html">blog</a> </li>
+    				<li><a href="Portfolio.html">portfolio</a></li>
+    				<li><a class="active" href="Research.html">Research</a></li>
+    				<li><a href="Contact.html">contact</a></li>
+    			</ul>
+    			<a href=""><div class="mobile-icon"  onclick= "slideshow()" ><i class="fa fa-bars"></i></div></a>
+    		</div>
+
+    	</div>
+        </header>
+
+        <div class="Header-1">
+        	<h1 style ="font-size: 80px;"><span class ="Colour">RESE</span>ARCH</h1>
+
+        <div class="tables">
+          <table border="3" align="center" width="90%" height="70%" bordercolor="black" cellspacing="7" cellpadding="10">
+            <tr>
+              <th width="30%">Descriptions</th>
+              <th width="35%">Researched Websites</th>
+              <th>My Website</th>
+              </tr>
+              <tr>
+                <td><p>1.   With the idea of the  website (www.insychengappa.me) shown in the table, I have made my home page.</p>
+                       </td>
+                <td><img src="Img/home.png" alt="Research" height="320" width="500"> </td>
+                <td><img src="Img/MHome.png" alt="my website" height="320" width="500"></td>
+                </tr>
+                <tr>
+                  <td><p>2.   From the website shown in the table, I took the idea of the header and applied it in my website.</p></td>
+                  <td><img src="Img/header.png" alt="Research" height="320" width="500"></td>
+                  <td><img src="Img/MHeader.png" alt="my website" height="320" width="500"></td>
+                  </tr>
+                  <tr>
+                    <td><p>3.   With the idea from the given website in the table, I have made my blog page after inserting an image and writing a quotes on it.</p></td>
+                    <td><img src="Img/blog.png" alt="Research" height="430" width="400"></td>
+                    <td><img src="Img/MBlog.png" alt="my website" height="400" width="500"></td>
+                  </tr>
+                  <tr>
+                    <td><p>4. From the given example of a contact page , I got the idea of to develop a contact page with a form validation for my contact page.</p></td>
+                    <td><img src="img/contact.png" alt="Research" height="320" width="500"></td>
+                    <td><img src="img/MContact.png" alt="my website" height="320" width="500"></td>
+                  </tr>
+                  <tr>
+                    <td><p>5. From the website as shon in figure , I took the knowledge of adding footer and then applied it in the all pages of my porfolio website.</p> </td>
+                    <td><img src="img/both.png" alt="Research" height="320" width="500"></td>
+                    <td><img src="img/MFooter.png" alt="my website" height="320" width="500"></td>
+                  </tr>
+          </table>
+        </div>
+          </body>
+          <footer>
+          	<div class="footer-main-div">
+
+          		<div class="footer-social-icons">
+          			<!--use of unorder list on page-->
+          			<ul>
+          				<!--Adding links on the icons to perform specific task after the icon is clicked-->
+          				<li><a href="https://www.facebook.com/virat.tyagi23/" target="blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/tyagigopal/" target="blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="mailto:gopal.tyagi23@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+				<li><a href="https://twitter.com/gopaltyagi23" target="blank"><i class="fa fa-twitter"></i></a></li>
+
+          			</ul>
+          		</div>
+
+          		<!--adding sicial icons-->
+          		<div class="footer-menu-one">
+          			<!--use of unorder list on page-->
+          			<ul>
+          				<li><a href="main.html">Home</a></li>
+          				<li><a href="Contact.html">Contact</a></li>
+          				<li><a href="Blog.html">Blog</a></li>
+          				<li><a href="Portfolio.html">Portfolio</a></li>
+          			</ul>
+          		</div>
+
+          	</div >
+
+          	<div class="footer-bottom">
+          		<p>&copy Developed by BipinChhetri</p>
+          	</div>
+          </footer>
+          </html>
